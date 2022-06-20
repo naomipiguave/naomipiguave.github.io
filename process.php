@@ -165,7 +165,6 @@ $json = json_decode($responseData, true);
 <script type='text/javascript' src="../bootstrap.min.js"></script>
 
 <body class="well">
-<script src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=<?php echo $json['id'] ?>"></script>
 
 
 <div class="container">
@@ -197,7 +196,7 @@ $json = json_decode($responseData, true);
 		
 		</div>
 	</div>
-	<p>Powered by <a href="http://www.datafast.com.ec/" target="_blank">Datafast</a></p>	
+	<p>Powered by <a href="https://www.datafast.com.ec/" target="_blank">Datafast</a></p>	
 	</div>
 </div>
 </body>
