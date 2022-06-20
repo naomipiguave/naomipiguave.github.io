@@ -196,7 +196,7 @@ $json = json_decode($responseData, true);
 		
 		</div>
 	</div>
-	<p>Powered by <a href="https://www.datafast.com.ec/" target="_blank">Datafast</a></p>	
+		
 	</div>
 </div>
 </body>
