@@ -17,7 +17,7 @@ if (!file_exists($nombre_fichero)) {
 if (filesize($nombre_fichero) == 0){
   $vacio = false;
 }else{
-  $file = fopen($nombre_fichero, "r") || exit("Error abriendo fichero!");
+  $file = fopen($nombre_fichero, "r");
   $linea = fgets($file);
   $terminal =  explode("_", $linea);
   $mid = trim($terminal[0]);
@@ -152,7 +152,7 @@ $json = json_decode($responseData, true);
 
 ?>
 <!DOCTYPE html>
-<html>
+<html xml:lang>
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -169,7 +169,7 @@ $json = json_decode($responseData, true);
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<img src="../imagenes/logo-datafast.png">
+			<img src="../imagenes/logo-datafast.png" alt="logodatafast">
 		</div>
 		<div class="col-md-12">
 		<h1>Portal de compras</h1>
@@ -192,7 +192,7 @@ $json = json_decode($responseData, true);
 		</div>
 		<div class="row">
 		<div class="col-md-12 text-center">
-		<!-- <img src="../imagenes/marcas.png"> -->
+		
 		</div>
 	</div>
 	<p>Powered by <a href="http://www.datafast.com.ec/" target="_blank">Datafast</a></p>	
